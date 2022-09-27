@@ -186,5 +186,44 @@ Footer
     background-color: #f63232;
     color: white;
     padding: 10px;
+    margin: 0;
     text-align: center;
+}
+
+
+/**********************Psuedo classes *************************/
+/* tag those elements when we hover over them  */
+.nav-bar li a:hover{
+    text-decoration: underline;
+    position: relative;
+    top: -5px;
+}
+
+/* when we hover*/
+.main-images li:hover{
+    position: relative;
+    top: -5px;
+}
+
+/* when we click (in focus)*/
+form input:focus{
+    border: 2px solid #387df3;
+    outline: none;
+}
+
+/* when input is valid */
+form input:valid{
+    border: 4px solid #71d300;
+}
+
+/**********************Psuedo elements *************************/
+
+article p::first-line{
+    font-weight: bold;
+}
+
+/** applies when we select any paragraph */
+p::selection{
+    background-color: #f63232;
+    color: white;
 }
