@@ -1,0 +1,190 @@
+/**
+Header
+*/
+
+header{
+    background-color: #f63232;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* positions the header always at the top */
+    width: 100%;
+    /* use z index to bring back the header to the front  */
+    /* Everything has 0 z index by default */
+    z-index: 1;
+    /* remove spaces around it */
+    top: 0;
+    left: 0;
+
+}
+
+header h1{
+    color: white;
+    border: 8px solid white;
+    /* padding top to buttom   padding left to right */
+    padding: 6px 12px;
+    /* Since its a block elemnt it takes up the whole width so we set it : */
+    display: inline-block;
+    border-radius: 36px; /* curver corners  */
+}
+
+/**
+banner
+*/
+
+/* Position the banner relative so we can add elements to it */
+.banner{
+    position: relative;
+}
+
+.banner img{
+    max-width: 100%; /** Set max width  */
+}
+
+.banner .welcome{
+    background-color: #feb614;
+    color: white;
+    padding: 30px; /** All way around padding */
+    position: absolute;
+    left: 0px;
+    top: 30%; /** use % to allow resizing */
+}
+
+/* Change font of banner  */
+.banner h2{
+    font-size: 72px;
+}
+
+.banner h2 span{
+    font-size: 1.3em; /** Inherits from parent and times it by 1.3 */
+}
+
+/**
+Navigation bar
+*/
+
+.nav-bar{
+    background-color: #f4f4f4;
+    padding: 20px;
+    /* Making bar stick under header once user scrolls down*/
+    position: sticky;
+    top: 105px;
+}
+
+/* Fix the issue were it overlaps and nav item becomes on new line */
+.nav-bar ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    /* top-buttom left-right */
+    margin: 0 auto; /* centralizes things and make items sit in middle  */
+}
+
+.nav-bar li{
+    width: 25%;
+    display: inline-block; /* so they sit next to each other*/
+    font-size: 24px;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color: #4B4B4B;
+
+} 
+
+.nav-bar li a.join{
+    color: #F63232;
+
+}
+
+
+/**
+Body
+*/
+
+body, ul, li, h1, h2, a{
+    margin: 0; /* removes marging applied by browser */
+    padding: 0;
+    font-family: arial;
+}
+
+
+/**
+Main content
+*/
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto; /** re centers the element in combination with width */
+    padding: 0 40px;
+    /* Padding causes the text to go out of screen */
+    /* to solve this we use box sizing*/
+    box-sizing: border-box; /* Adds padding to the max width */
+}
+
+/**
+Article
+*/
+
+/* article title*/
+article h2{
+    color: #f63232;
+    font-size: 48px;
+}
+
+article p{
+    line-height: 2em; /* space between lines */
+    color: #4b4b4b;
+}
+
+
+/* Images */
+.main-images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+.main-images li{
+    display: inline-block; /* sit net to each other */
+    width: 46%;
+    /** 43% for one image 43% for another, 4% for total margin for each li*/
+    margin: 20px 2%; 
+}
+
+
+.main-images li img{
+    max-width: 100%; /* This makes them set next to each other */
+}
+
+/**
+Join
+*/
+
+section.join{
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+
+section.join h2{
+    font-size: 36px;
+}
+
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: 4px solid white;
+    border-radius: 28px;
+}
+
+/**
+Footer 
+*/
+.footer{
+    background-color: #f63232;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
